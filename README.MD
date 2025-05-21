@@ -1,11 +1,11 @@
 # Movie Collection Manager 🎬
 
-Простое консольное приложение для управления коллекцией фильмов с использованием ООП в Python.
+A simple console application for managing a movie collection using OOP in Python.
 
-## Возможности
+## Features
 
-- 📌 Добавление и удаление фильмов
-- 🔍 Поиск по названию, году выпуска и жанру
-- 🔄 Итерация по коллекции с помощью кастомного итератора
-- 📂 Хранение данных в памяти (без БД)
-- 🛠 Полностью типизированный код (type hints)
+- 📌 Add and remove movies
+- 🔍 Search by title, year of release and genre
+- 🔄 Iterate over the collection using a custom iterator
+- 📂 Store data in memory (no DB)
+- 🛠 Fully typed code (type hints)
