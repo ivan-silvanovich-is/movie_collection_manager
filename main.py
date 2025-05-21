@@ -15,16 +15,18 @@ if __name__ == '__main__':
     favorites.remove_movie('Ideocracy')
 
     # Let's see my collection now
+    print('🗂️ My collection:')
     for movie in favorites:
-        print(movie)
+        print(movie.details())
 
     # Okay, how many Sci-Fi movies are in my collection?
+    print('\n🛸 All my Sci-Fi:')
     for i, movie in enumerate(favorites.filter(genre='Sci-Fi')):
-        print(f'{i}. {movie.title}')
+        print(f'{i+1}. {movie}')
 
     # At the second thought, I don't really remember this Annihilation movie
-    print(favorites.details('Annihilation'))
+    print("\n🤔 What's Annihilation?", favorites.details('Annihilation'), sep='\n', end='\n\n')
 
     # Do I really like old movies?
-    for movie in favorites.filter(year__lt=2010, rating__gte=9.0):
-        print(movie)
+    for i, movie in enumerate(favorites.filter(year__lt=2010, rating__gte=9.0)):
+        print(f'{i+1}. {movie}')
